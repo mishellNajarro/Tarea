@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tarea</title>
+	<meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+	<style type="text/css">
+
+		body{
+			background:  #808b96 ;
+			font-size: 0.8rem;
+		}
+
+		h1 { 
+			position: relative; 
+			background: #808b96 ;
+			font-size: 2.5em;
+		}
+
+		h1 span {
+		    position:absolute;
+		    right:0;
+		    width:0;
+		    background: #808b96 ;
+		    border-left: 1px solid #000;
+		    animation: escribir 5s steps(30) infinite alternate;
+		}
+
+		@keyframes escribir {
+		    from { width: 100% }
+		    to { width:0 }
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container" style="align-content: center;">
+		<hr>
+		<div class="card" style="width: 100%; background: #f2f3f4 ">
+		  <div class="card-body">
+		  	<div class="row">
+				<div class="contenedor">
+					<h1  style="padding: 1%; text-align: center;">Tendencias tecnologícas.<span>&#160;</span></h1>
+				</div>
+		  	</div>
+		  	<div class="row">
+		  		<p>
+		  			Con el paso del tiempo, las mentes más brillantes han realizado descubrimientos que 
+		  			nos han ayudado desde pequeñas tareas rutinarias hasta temas complejos como análisis	
+		  			de simulaciones de escenarios para viajes a la luna, diferentes tipos de softwares en
+		  			categorias como análisis de presición que ayuda al área de agricultura donde permite 
+		  			detectar de manera más eficiente inconvenientes.
+		  		</p>
+		  		<div>
+		  			Algunas de las tecnología son las siguientes:
+		  			<ul>
+		  				<li>5G</li>
+		  				<li>Inteligencia Artificial (IA) y Machine Learning</li>
+		  				<li>Blockchain</li>
+		  				<li>IOT</li>
+		  			</ul>
+		  		</div>
+		  	</div>
+		  	<div class="row">
+			  	<table class="table table-bordered" id="tbl_tipos">
+			  		<thead style="background:  #6e2c00; color: white;">
+			  			<tr>
+			  				<th>ID TECNOLOGIA</th>
+			  				<th>DESCRIPCION</th>
+			  				<th>USO</th>
+			  				<th>COMENTARIO</th>
+			  				<th>REF</th>
+			  			</tr>
+			  		</thead>
+			  		<tbody>
+			  			<tr>
+			  				<td>1</td>
+			  				<td>IOT Internet of Things</td>
+			  				<td>1</td>
+			  				<td>Actualmente el uso de internet de las cosas se ha ampliado incluso a uso domestico como por ejemplo dispositivos electronicos como calefacción "inteligente" que permite un control automatico del clima dentro
+			  				del entorno
+			  				<td>
+			  					<img width="50px" height="50px" src="https://hlassets.paessler.com/common/files/background-photos/iot-world.svg">
+			  				</td>
+			  			</tr>
+			  			<tr>
+			  				<td>2</td>
+			  				<td>Inteligencia Artificial (IA)</td>
+			  				<td>1</td>
+			  				<td>
+			  					Es uno quizá de los más interesantes ya que pretende la simulación de comportamientos humanos; su implementación se puede ver en conjunto con tecnologías con el machine learning en donde se "entrenan" ciertos algoritmos con fines especificos como por ejemplo el reconocimiento de objetos.
+			  				<td>
+			  					<img width="50px" height="50px" src="https://hardzone.es/app/uploads-hardzone.es/2020/09/Inteligencia-Artificial.jpg">
+			  				</td>
+			  			</tr>
+			  			<tr>
+			  				<td>3</td>
+			  				<td>5G</td>
+			  				<td>1</td>
+			  				<td>
+			  					Es un  nuevo estandar en telecomunicaciones que ofrece mayor velocidad en una era donde todo debe realizarse a un ritmo acelerado además de una menor latencia.
+
+			  					En sus inicios hubo escepticismo de algunos grupos que consideraban que el uso de este estandar podria povocar serios daños a la salud de los humanos.
+			  				<td>
+			  					<img width="50px" height="50px" src="https://revistamyt.com/wp-content/uploads/2021/05/Redes-5G.jpeg">
+			  				</td>
+			  			</tr>
+			  			<tr>
+			  				<td>4</td>
+			  				<td>Blockchain</td>
+			  				<td>1</td>
+			  				<td>
+			  					Es un servicio que obrece altos niveles de seguridad para el manejo y control de transacciones su uso común en dentro del entorno de monedas criptodivisas o criptomonedas.
+			  				<td>
+			  					<img width="50px" height="50px" src="https://i.blogs.es/b5ce90/blockchain2/1366_2000.jpg">
+			  				</td>
+			  			</tr>
+			  			<tr>
+			  				<td>5</td>
+			  				<td>Impresión 3D</td>
+			  				<td>1</td>
+			  				<td>
+			  					La impresión 3D es una avance muy importante de tecnologías de fabricación por adición donde un objeto tridimensional es creado mediante la superposición de capas sucesivas de material. Leal, Silvia (11 de noviembre de 2015). E-Renovarse o morir: 7 Tendencias tecnológicas para convertirte en un líder digital
+			  				<td>
+			  					<img width="50px" height="50px" src="https://elmercantil.com/wp-content/uploads/2019/06/ezgif.com-crop-4.gif">
+			  				</td>
+			  			</tr>
+			  			<tr>
+			  				<td>6</td>
+			  				<td>Seguridad de datos o ciberseguridad</td>
+			  				<td>1</td>
+			  				<td>
+			  					Los datos son el activo más preciado para las empresas y un recurso cada vez más búscado por los piratas informáticos por que las empresas se encuentran en constante monitoreo y reforzamiento de sus sistemas.
+			  				<td>
+			  					<img width="50px" height="50px" src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/11/Aprende-a-defenderte-de-los-ciberdelicuentes-con-estas-herramientas-de-seguridad-inform%C3%A1tica.jpg?w=800">
+			  				</td>
+			  			</tr>
+			  		</tbody>
+			  	</table>
+		  	</div>
+		  	<br>
+		  	<div class="row">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/pC5Xc0zAFtg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+		  	</div>
+		  </div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">	
+
+	$( document ).ready(function() {
+		$('#tbl_tipos').DataTable( {
+		    rowGroup: {
+		        dataSrc: 'group'
+		    }
+		} );
+	});
+
+</script>
+</html>
